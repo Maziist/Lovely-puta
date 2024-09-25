@@ -1,0 +1,10 @@
+1. Création de la BDD 
+2. Création de la class BDD, avec les méthodes qui permette la connexion a la Db et la déconnexion
+3. Création de la class Router et de la méthode qui permet de le charger 
+4. On appelle le Router dans index.php et on s'assure qu'il fonctionne
+5. Creation de l'abtract Controller qui force la methode "index()" dans les classes qui l'étendent 
+6. Création du controller Register qui charge la vue register
+7. Faire la vue register "formulaire"
+8. Création du repository User et de la méthode qui permet l'inscription de l'user 
+9. Création de notre Model User
+10. Faire en sorte que notre RegisterController enregistre l'utilisateur en base grace a notre repository

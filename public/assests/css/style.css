@@ -1,0 +1,218 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0095f6;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0081d6;
+}
+
+article {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+article p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-buttons {
+    display: inline-block;
+}
+
+.like-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #262626;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.like-buttons button::before {
+    content: '\2661'; /* Cœur vide */
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.like-buttons form[action="/RemoveLike"] button::before {
+    content: '\2665'; /* Cœur plein */
+    color: #ed4956;
+}
+
+.comments {
+    margin-top: 15px;
+}
+
+.comment {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.comment small {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+/* Nouveaux styles pour aligner les boutons */
+.post-actions form {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.post-actions button {
+    margin-bottom: 0;
+}
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+    color: #e74c3c;
+}
+
+.btn-edit {
+    color: #3498db;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    pointer-events: none;
+}
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.comment-actions form {
+    margin-left: 5px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 3px 6px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+    color: #e74c3c;
+}
+
+.btn-edit {
+    color: #3498db;
+}
+
+.btn-save {
+    color: #2ecc71;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    pointer-events: none;
+}
